@@ -1,0 +1,16 @@
+{
+  "name": "byb-playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Maryllkate/byb-playwright.git",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.1"
+  },
+  "scripts": {
+    "plytests": "yarn playwright test",
+    "plyreports": "playwright show-report",
+    "plyopen": "playwright test --ui"
+  }
+}
