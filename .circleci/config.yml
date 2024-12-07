@@ -21,3 +21,5 @@ jobs:
       - run:
           name: Run IDS Sanity Test
           command: yarn plytests
+      - store_test_results:
+          path: test-results
