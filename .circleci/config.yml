@@ -19,5 +19,5 @@ jobs:
           name: Install Dependencies
           command: npm install
       - run:
-          name: Run Playwright test
+          name: Run IDS Sanity Test
           command: yarn plytests
