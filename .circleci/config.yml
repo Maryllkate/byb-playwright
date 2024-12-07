@@ -14,7 +14,12 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-
+     - run:
+      #...
+      # run tests and store XML files to a subdirectory, for example, test-results
+      #...
+      - store_test_results:
+        path: test-results
       - run:
           name: Install Dependencies
           command: npm install
